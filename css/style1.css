@@ -1,0 +1,219 @@
+@charset "utf=8";
+
+#wrapper {
+    background-color: pink;
+    float: inherit;
+    width: 900px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+h1,h2,h3 {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 21px;
+}
+a{
+    color: peru;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    width:auto;
+    height:20px;
+    text-align: center;
+    background-color: yellow;
+    padding: 10px 0px 10px 10px;
+    font-weight: bold;
+    color: greenyellow
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: grey;
+    text-decoration: none;
+
+}
+header{
+    width: auto;
+    height: auto;
+    background-color: purple;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 20px;
+    padding: 10px 0px 5px 5px;
+    color: aqua;
+
+}
+ 
+article{
+    float:left;
+    width: auto; 
+    background-color: pink;
+    font-style:normal;
+    font: size 13px;
+    line-height: 20px;
+    color: black;
+    padding: 15px 15px 5px 5px;
+    
+}
+aside{
+    float:right;
+    width:auto;
+    text-align: left;
+    background-color: papayawhip;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13;
+    font-style:normal;
+    color: black;
+    padding: 25px 25px 25px 25px;
+    line-height:15px;
+}
+footer{
+    clear: both;
+    width:Auto;
+    height: Auto;
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:normal;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    padding: 15px 0px 10px 10px;
+
+}
+
+/* contact.html */
+
+/* remove input autofocus */
+
+*:focus{
+    outline: none;
+}
+
+/* form typograph */
+.contact_form h2,.contact_form label{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.contact_form ul{
+    width: 100%;
+   list-style-type: none;
+   list-style-position:absoutle;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact_form li{
+    padding:12px;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.contact_form li {
+    margin: 12px;
+
+}
+
+.notification{
+    color: blue;
+margin: 5px 0 0 0;
+display:inline;
+float: right;
+}
+
+.contact_form label{
+    font-weight: bold;
+    width:150px;
+    margin-top:5px;
+    display: inline-block;
+    float:left;
+}
+
+.contact_form textarea{
+    width:300px;
+    padding: 5px; 
+}
+
+.contact_form button{
+    margin-left: 200px;
+}
+
+.contact_from input, .contact_form textarea{
+    border: 1px solid black;
+    box-shadow:0 0 3 #cccccc 0  10px 15px #eeeeee inset;
+    border-radius: 2px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+
+}
+
+.contact_form input:focus, .contact_form textarea:focus{
+    background-color: #ffffff;
+    border: 2px soldi #555555;
+    box-shadow: 0 0 3px #aaaaaa;
+    padding-right: 75px;
+}
+
+.contact_form input:required, .contact_form textarea:required{
+    background: #fff url(image/red_asterisk.png)=no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b45252;
+}
+
+.contact_form input:focus:valid, .contact_form textarea:focus:valid{
+    box-shadow:0 0 5px #07e75d;
+    border-color: #37cc0a;
+}
+
+.form_hint{
+    background:#d45252;
+    border-radius: 3px 3px 3px;
+    color: white;
+    margin-left: 10px;
+    padding: 1px 6px;
+    position: absolute;
+    top: 1px;
+    left: -5px;
+}
+
+.form_hint::before{
+    content: "25C0";
+color: #d45252;
+position: absolute;
+top:1px;
+left:-5px;
+}
+
+.contact_form input:focus + .form_hint{
+    display: inline;
+}
+
+.contact_form input required:valid +.form_hint{
+    color: #28921f;
+}
+
+button.submit{
+    background-color: #28921f;
+    border: 2px solid #509111;
+    border-bottom: 1px solid #5b992f;
+    border-radius: 3px;
+    /* box-shadow: inset 0 1px 0 0 #9fd574; */
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 20px;
+}
+
+button.submit :hover{
+    opacity: 55;
+    cursor: pointer;
+}
+
+button.submit:active{
+    border:2px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b;
+}
