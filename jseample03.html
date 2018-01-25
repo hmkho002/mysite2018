@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <script lang="javascript" type="text/javascript">
+
+        function autoRefresh(t) {
+            setTimeout("location.reload(true);", t);
+        }
+
+
+        function redirectPage() {
+            window.location = "https://www.microsoft.com";
+        }
+
+        </script>
+    </head>
+    <body onload="javascript:redirectPage();">
+        <script lang="javascript" type="text/javascript">
+        var employee = {
+            name : "James",
+            email : "james@iloveyou.com",
+            tel: "999995999"
+        }
+
+        var employeelist = [
+        {
+            name : "James",
+            email : "james@iloveyou.com",
+            tel: "999995999"
+        },    
+        {
+            name : "Darryl",
+            email : "darryl@iloveyou.com",
+            tel: "888888888"
+        },    
+        {
+            name : "Lee",
+            email : "lee@iloveyou.com",
+            tel: "777777777"
+        }    
+
+     ]   
+           
+        document.write("Size of employeelist: " + employeelist.length);
+
+        document.write("<br>");
+        document.write("<table border=2 width=80% align=center>");
+        for(var i =0; i < employeelist.length; i++) {
+            document.write("<tr>");
+            document.write("<td>" + employeelist [i].name + "</td>");
+            document.write("<td>" + employeelist [i].email + "</td>");
+            document.write("<td>" + employeelist [i].tel + "</td>");
+            document.write("<tr>");
+        }  
+        document.write ("</table>");
+        </script>
+
+        <a href= "javascript :location.reload(true)">Refresh Page</a>
+    </body>
+</html>
